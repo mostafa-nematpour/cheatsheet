@@ -1,0 +1,98 @@
+git init
+>>  create a new repository in the current directory.
+
+git clone <path-to-repository-to-clone>
+>>  to create an identical copy of an existing repository.
+
+git status
+>>  display the current status of the repository.
+
+**
+
+git log
+>>  used to display all of the commits of a repository.
+
+git log --oneline
+
+
+git log --stat
+>>  display the files that have been changed in the commit
+
+git log -p
+>>  display the actual changes made to a file.
+
+git log -p --stat
+
+git log -p fdf5493
+
+git show
+>>  show only one commit.
+
+git add <file1> <file2> … <fileN>
+>>  move files from the Working Directory to the Staging Index.
+
+git rm --cached <file>...
+>>  to unstage
+
+git commit -m "commit message"
+>>  to make new commit
+
+git diff
+>>  used to see changes that have been made but haven't been committed, yet.
+
+**
+
+git tag v1.0
+>>  set tag
+
+git tag
+>>  display all tags that are in the repository.
+
+git tag -d v1.0
+>>  Deleting A Tag
+
+git tag -a v1.0 a87984
+>>  Adding A Tag To A Past Commit
+
+git branch
+>>  list all branch names in the repository
+
+git branch name
+
+git checkout
+>>  switch between branches
+
+git branch -d name
+>>  Delete A Branch
+
+git branch -D sidebar
+>>  force delete
+
+git checkout -b new_branch_name
+>>  create a new branch and chackout 
+
+git log --oneline --decorate --graph --all
+
+--all
+>>.  see all branches at once
+--graph
+>>.  This shows the actual branching that's happening.
+
+git merge <name-of-branch-to-merge-in>
+
+**
+
+git commit --amend
+>>  Changing The Last Commit
+>>  update the most-recent commit instead of creating a new one.
+
+git revert <SHA-of-commit-to-revert>
+>>  revert commit
+
+git reset <reference-to-commit>
+git reset Head^
+>>  to reset (erase) commits
+
+--mixed (working directory)
+--soft (stage index	)
+--hard (trash)
