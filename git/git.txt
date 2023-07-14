@@ -57,7 +57,8 @@ git tag -a v1.0 a87984
 git branch
 >>  list all branch names in the repository
 
-git branch name
+git branch 'new_branch_name'
+>> creates a new branch named new_branch_name
 
 git checkout
 >>  switch between branches
