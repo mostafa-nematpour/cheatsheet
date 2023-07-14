@@ -63,8 +63,8 @@ git branch 'new_branch_name'
 git checkout
 >>  switch between branches
 
-git branch -d name
->>  Delete A Branch
+git branch -d 'branch_name'
+>>  delete branch_name Branch
 
 git branch -D sidebar
 >>  force delete
