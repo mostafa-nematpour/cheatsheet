@@ -1,0 +1,204 @@
+***  basic-javascript  ***
+
+Comment
+// This is an in-line comment.
+
+/* This is a
+multi-line comment */
+
+
+JavaScript different data types are:
+undefined, null, boolean, string, 
+symbol, bigint, number, object.
+
+
+Declare JavaScript Variables
+var ourName;
+
+store a value in a variable with the assignment operator (=).
+
+unlike `var`, when you use `let`, a variable with the same name can only be declared once.
+
+String length
+stringVar.length
+
+Get character index number n
+stringVar[n]
+
+***********************************************************************
+array
+	const sandwich = ["peanut butter", "jelly", "bread"];
+
+nest arrays
+	const teams = [["Bulls", 23], ["White Sox", 45]];
+
+Access Array Data with Indexes
+	const array = [50, 60, 70];
+	console.log(array[0]);//50
+
+Modify Array Data With Indexes
+	const ourArray = [50, 40, 30];
+	ourArray[0] = 15; //ourArray now has the value [15, 40, 30]
+
+An easy way to append data to the end of an array is via the push() function.
+	const arr1 = [1, 2, 3];
+	arr1.push(4); //arr1 now has the value [1, 2, 3, 4]
+
+.pop() always removes the last element of an array.
+	const threeArr = [1, 4, 6];
+	const oneDown = threeArr.pop();//oneDown => 6 , threeArr => [1, 4]
+
+
+.shift() removes the first element of array.
+	const ourArray = ["Stimpson", "J", ["cat"]];
+	const removedFromOurArray = ourArray.shift(); // removedFromOurArray =>Stimpson , ourArray => ["J", ["cat"]]
+
+you can also unshift elements to the beginning of an array
+	const ourArray = ["Stimpson", "J", "cat"];
+	ourArray.shift(); 	   	// ourArray => ["J", "cat"]
+	ourArray.unshift("Happy"); 	// ourArray => ["Happy", "J", "cat"]
+
+***********************************************************************
+function
+	function functionName() {}
+Variables which are declared within a function, as well as the function parameters, have local scope.
+That means they are only visible within that function.
+
+It is possible to have both local and global variables with the same name.
+When you do this, the local variable takes precedence over the global variable.
+
+***********************************************************************
+Conditional Logic
+if(condition) {
+
+}
+
+
+
+Strict Equality Operator === cheak value and type
+
+Selecting from Many Options with Switch Statements
+switch (num) {
+  case value1:
+    statement1;
+    break;
+  case value2:
+    statement2;
+    break;
+
+  ...
+
+  default:
+    defaultStatement;
+    break;
+}
+
+***********************************************************************
+
+JavaScript Objects
+
+const object = {
+  make: "Ford",
+  5: "five",
+  "model": "focus"
+};
+get properties value
+
+const myObj = {
+  prop1: "val1",
+  prop2: "val2"
+};
+
+const prop1val = myObj["prop1"];
+const prop2val = myObj.prop2;
+
+
+updating-object-properties
+myObject.prop1 = "new data";
+
+
+add-new-properties-to-a-javascript-object
+const ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+ourDog.bark = "bow-wow";
+
+delete-properties-from-a-javascript-object
+delete ourDog.bark;
+
+testing-objects-for-properties
+myObj.hasOwnProperty("top");
+
+***********************************************************************
+Math.random() // random numbers
+Math.floor()  // function to round the value down to the nearest whole number.
+The parseInt() function parses a string and returns an integer
+
+parseInt(string, radix); // specifies the base of the number in the string. The radix can be an integer between 2 and 36.
+
+Use the Conditional (Ternary) Operator
+The syntax is a ? b : c,
+a is the condition,
+b is the code to run when the condition returns true,
+c is the code to run when the condition returns false.
+
+
+
+***************************************es6***************************************
+
+
+Object.freeze to prevent data mutation.
+let obj = {
+  name:"FreeCodeCamp",
+  review:"Awesome"
+};
+Object.freeze(obj);
+
+
+Arrow Functions
+const myFunc = () => "value";
+
+
+spread operator
+allows us to expand arrays and other expressions in places where multiple parameters or elements are expected.
+
+...arr
+
+Destructuring Assignment
+
+const user = { name: 'John Doe', age: 34 };
+
+const name = user.name;
+const age = user.age;
+==
+const { name, age } = user;
+const { name: userName, age: userAge } = user; // userName and userAge 
+
+const [a, b,,, c] = [1, 2, 3, 4, 5, 6];
+console.log(a, b, c);
+
+
+const profileUpdate = (profileData) => {
+  const { name, age, nationality, location } = profileData;
+}
+==
+const profileUpdate = ({ name, age, nationality, location }) => {
+}
+
+
+Create Strings using Template Literals
+const greeting = `Hello, my name is ${person.name}! I am ${person.age} years old.`;
+`${variable}`
+
+const getMousePosition = (x, y) => ({
+  x: x,
+  y: y
+});
+==
+const getMousePosition = (x, y) => ({ x, y });
+
+
