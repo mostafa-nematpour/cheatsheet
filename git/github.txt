@@ -3,3 +3,8 @@ git push --force
 >>  In the wrong branch, I committed and pushed
     I fixed it with these commands and it was removed from GitHub
     Changes are also deleted
+
+git fetch --all
+git branch -r
+git checkout -b local_branch_name origin/remote_branch_name
+>>  fetch all Git branches
