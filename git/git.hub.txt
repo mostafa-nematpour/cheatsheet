@@ -1,0 +1,5 @@
+git reset --hard HEAD^
+git push --force
+>>  In the wrong branch, I committed and pushed
+    I fixed it with these commands and it was removed from GitHub
+    Changes are also deleted
