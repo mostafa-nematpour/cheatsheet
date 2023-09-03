@@ -40,6 +40,9 @@ git commit -m "commit message"
 git diff
 >>  used to see changes that have been made but haven't been committed, yet.
 
+git reset --hard 
+>> discarding uncommitted changes
+
 **
 
 git tag v1.0
