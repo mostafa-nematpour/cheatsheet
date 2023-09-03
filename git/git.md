@@ -28,6 +28,7 @@
 - `git rm --cached <file>...`: Unstage files from the Staging Index.
 - `git commit -m "commit message"`: Create a new commit with a descriptive message.
 - `git diff`: View the changes that have been made but not committed yet.
+- `git reset --hard `: discarding uncommitted changes.
 
 ## Tags
 
