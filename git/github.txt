@@ -8,3 +8,6 @@ git fetch --all
 git branch -r
 git checkout -b local_branch_name origin/remote_branch_name
 >>  fetch all Git branches
+
+git clone github_url --depth 1
+>> clone whit last commit
