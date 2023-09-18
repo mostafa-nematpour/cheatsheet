@@ -1,3 +1,9 @@
+git config --global user.name "FIRST_NAME LAST_NAME"
+>> Setusername
+
+git config --global user.email "MY_NAME@example.com"
+>> Set email address
+
 git init
 >>  create a new repository in the current directory.
 
