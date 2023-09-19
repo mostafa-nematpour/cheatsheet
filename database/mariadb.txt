@@ -1,2 +1,5 @@
 sudo systemctl start mysql
 >> for run mysql
+
+sudo systemctl status mariadb
+>> get status
