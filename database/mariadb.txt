@@ -1,5 +1,11 @@
+sudo systemctl status mariadb
+>> get status
+
 sudo systemctl start mysql
 >> for run mysql
 
-sudo systemctl status mariadb
->> get status
+sudo systemctl enable mariadb 
+>> for run every startup 
+
+sudo systemctl disable mariadb
+>> disable startup
