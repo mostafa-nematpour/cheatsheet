@@ -10,6 +10,10 @@ sudo systemctl enable mariadb
 sudo systemctl disable mariadb
 >> disable startup
 
+sudo mysql_secure_installation
 sudo mariadb
   ALTER USER 'root'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('new_password');
 >> for `Access denied for user 'root'@'localhost'` error. (change password)
+
+host: 'localhost' to '127.0.0.1'
+>> for Error: connect ECONNREFUSED ::1:3306
