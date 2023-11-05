@@ -11,3 +11,14 @@ git checkout -b local_branch_name origin/remote_branch_name
 
 git clone github_url --depth 1
 >> clone whit last commit
+
+git clone <your_repository_url>
+cd <your_repository_folder_name>
+git checkout -b <merge_other_repo_branch_name> main
+git config pull.rebase false
+git pull <other_repository_url> main
+git commit -m "Merge branch 'main' of <other_repository_url> into <repository_name>"
+git checkout main
+git merge --no-ff <merge_other_repo_branch_name>
+git push origin main
+>> commands to resolving conflicts in cli (need some action in github befor)
