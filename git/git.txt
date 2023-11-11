@@ -96,6 +96,9 @@ git commit --amend
 >>  Changing The Last Commit
 >>  update the most-recent commit instead of creating a new one.
 
+git commit --amend -m "New Commit Message"
+>> rename the last commit message
+
 git revert <SHA-of-commit-to-revert>
 >>  revert commit
 
