@@ -1,5 +1,10 @@
 # Git Commands Cheat Sheet
 
+## Configuring Git
+
+- `git config --global user.name "FIRST_NAME LAST_NAME"`: Set your name in Git configuration.
+- `git config --global user.email "MY_NAME@example.com"`: Set your email address in Git configuration.
+
 ## Initializing a Repository
 
 - `git init`: Create a new repository in the current directory.
@@ -28,7 +33,7 @@
 - `git rm --cached <file>...`: Unstage files from the Staging Index.
 - `git commit -m "commit message"`: Create a new commit with a descriptive message.
 - `git diff`: View the changes that have been made but not committed yet.
-- `git reset --hard `: discarding uncommitted changes.
+- `git reset --hard `: Discard uncommitted changes.
 
 ## Tags
 
@@ -53,9 +58,13 @@
 ## Modifying Commits
 
 - `git commit --amend`: Change the most recent commit.
+- `git commit --amend -m "New Commit Message"`: Rename the last commit message.
 - `git revert <SHA-of-commit-to-revert>`: Revert a commit.
 - `git reset <reference-to-commit>`: Reset (erase) commits.
   - `--mixed`: Reset to the previous commit, keeping changes in the Working Directory.
   - `--soft`: Reset to the previous commit, keeping changes in the Staging Index.
   - `--hard`: Discard all changes and reset to the previous commit.
+  
+- `git log --oneline --decorate --graph --all`: View the commit history with a graphical representation of all branches.
 
+These are common Git commands and explanations to help you work with version control in your projects. Feel free to copy and use them as needed.
