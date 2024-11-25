@@ -22,3 +22,12 @@ git checkout main
 git merge --no-ff <merge_other_repo_branch_name>
 git push origin main
 >> commands to resolving conflicts in cli (need some action in github befor)
+
+git merge --no-commit --no-ff branchName
+>> Merges branchName into the current branch without committing or fast-forwarding.
+
+
+
+
+
+
